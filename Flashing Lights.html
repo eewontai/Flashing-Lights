@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flashing Lights</title>
+</head>
+
+<body>
+    <div id="d1" style="position: fixed; left: {1}px; top: {1}px; width: 1px; height: 1px; background-color: red;">
+    </div>
+
+    <script type="text/javascript">
+        var red = Math.floor(Math.random() * 256);
+        var green = Math.floor(Math.random() * 256);
+        var blue = Math.floor(Math.random() * 256);
+
+        var thergb = "rgb(" + red + "," + green + "," + blue + ")";
+        console.log(thergb);
+        document.body.style.background = thergb;
+    </script>
+</body>
+
+</html>
